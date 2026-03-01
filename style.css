@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #2d3748;
-    --secondary-color: #718096;
+    --primary-color: #1a202c;
+    --secondary-color: #4a5568;
     --accent-color: #e27d3a;
-    --text-color: #ffffff;
-    --bg-color: #1a202c;
-    --card-bg: #2d3748;
-    --card-border: #4a5568;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --text-color: #f8f9fa;
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --card-border: #334155;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s ease;
 }
 
@@ -15,9 +15,15 @@ body {
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: var(--transition);
+    background-image: radial-gradient(circle at 20% 20%, rgba(236, 240, 241, 0.3) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 80%, rgba(236, 240, 241, 0.3) 0%, transparent 50%);
 }
 
-/* Card styles */
+.dark-theme body {
+    background-image: none;
+    background-color: var(--bg-color);
+}
+
 .card {
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
@@ -32,15 +38,16 @@ body {
 }
 
 .card:hover {
-    background-color: rgba(45, 55, 72, 0.9);
+    background-color: rgba(30, 26, 42, 0.9);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
     color: var(--accent-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .card-description {
@@ -48,14 +55,13 @@ body {
     line-height: 1.6;
 }
 
-/* Numbered name styles */
 .numbered-name {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
+    background-color: rgba(30, 26, 42, 0.8);
+    border: 1px solid rgba(74, 85, 104, 0.3);
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
 
@@ -63,6 +69,7 @@ body {
     color: var(--text-color);
     margin-bottom: 0.75rem;
     font-size: 1.75rem;
+    font-weight: 600;
 }
 
 .numbered-name p {
@@ -70,51 +77,19 @@ body {
     line-height: 1.6;
 }
 
-/* Horizontal and vertical name styles */
-.horizontal-name {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
+.horizontal-name,
 .vertical-name {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-/* Specific card styling for numbered names */
-.numbered-name-card {
-    background-color: rgba(45, 55, 72, 0.8);
+    background-color: rgba(30, 26, 42, 0.8);
     border: 1px solid rgba(74, 85, 104, 0.3);
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
 }
 
-.numbered-name-card h2 {
-    color: #ffffff;
-    margin-bottom: 0.75rem;
-    font-size: 1.75rem;
-}
-
-.numbered-name-card p {
-    color: #a0aec0;
-    line-height: 1.6;
-}
-
-/* Dark theme specific styles */
 .dark-theme .card {
-    background-color: rgba(45, 55, 72, 0.9);
+    background-color: rgba(30, 26, 42, 0.9);
 }
 
 .dark-theme .card-title {
@@ -123,4 +98,21 @@ body {
 
 .dark-theme .card-description {
     color: #a0aec0;
+}
+
+.dark-theme .numbered-name {
+    background-color: rgba(30, 26, 42, 0.9);
+}
+
+.dark-theme .numbered-name h2 {
+    color: var(--text-color);
+}
+
+.dark-theme .numbered-name p {
+    color: #a0aec0;
+}
+
+.dark-theme .horizontal-name,
+.dark-theme .vertical-name {
+    background-color: rgba(30, 26, 42, 0.9);
 }
