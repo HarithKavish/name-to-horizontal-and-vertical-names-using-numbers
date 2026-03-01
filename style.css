@@ -2,11 +2,11 @@
     --primary-color: #00d4e9;
     --secondary-color: #00b8d4;
     --accent-color: #00d4e9;
-    --text-color: #000000;
-    --bg-color: #e8f5f0;
-    --card-bg: #f0f9f5;
-    --card-border: #d1e6e1;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --text-color: #ffffff;
+    --bg-color: #0077cc;
+    --card-bg: #0077cc;
+    --card-border: #005a99;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
 
@@ -15,8 +15,8 @@ body {
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: var(--transition);
-    background-image: radial-gradient(circle at 20% 20%, rgba(200, 238, 255, 0.3) 0%, transparent 50%),
-                      radial-gradient(circle at 80% 80%, rgba(200, 238, 255, 0.3) 0%, transparent 50%);
+    background-image: radial-gradient(circle at 20% 20%, rgba(0, 119, 204, 0.2) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 80%, rgba(0, 119, 204, 0.2) 0%, transparent 50%);
 }
 
 .dark-theme body {
@@ -38,9 +38,9 @@ body {
 }
 
 .card:hover {
-    background-color: rgba(240, 248, 240, 0.9);
+    background-color: rgba(0, 125, 200, 0.9);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
@@ -51,17 +51,17 @@ body {
 }
 
 .card-description {
-    color: #4a90e2;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 .numbered-name {
-    background-color: rgba(240, 248, 240, 0.8);
-    border: 1px solid rgba(130, 205, 220, 0.3);
+    background-color: rgba(0, 125, 200, 0.8);
+    border: 1px solid rgba(0, 106, 160, 0.3);
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: var(--transition);
 }
 
@@ -73,23 +73,23 @@ body {
 }
 
 .numbered-name p {
-    color: #4a90e2;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
 .horizontal-name,
 .vertical-name {
-    background-color: rgba(240, 248, 240, 0.8);
-    border: 1px solid rgba(130, 205, 220, 0.3);
+    background-color: rgba(0, 125, 200, 0.8);
+    border: 1px solid rgba(0, 106, 160, 0.3);
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: var(--transition);
 }
 
 .dark-theme .card {
-    background-color: rgba(240, 248, 240, 0.9);
+    background-color: rgba(0, 125, 200, 0.9);
 }
 
 .dark-theme .card-title {
@@ -97,11 +97,11 @@ body {
 }
 
 .dark-theme .card-description {
-    color: #4a90e2;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .dark-theme .numbered-name {
-    background-color: rgba(240, 248, 240, 0.9);
+    background-color: rgba(0, 125, 200, 0.9);
 }
 
 .dark-theme .numbered-name h2 {
@@ -109,10 +109,10 @@ body {
 }
 
 .dark-theme .numbered-name p {
-    color: #4a90e2;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .dark-theme .horizontal-name,
 .dark-theme .vertical-name {
-    background-color: rgba(240, 248, 240, 0.9);
+    background-color: rgba(0, 125, 200, 0.9);
 }
