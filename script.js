@@ -1,14 +1,14 @@
-// Dark theme updates for cards
+// Turquoise theme updates for cards
 document.addEventListener('DOMContentLoaded', function() {
     // Update card background and text colors
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
-        card.style.backgroundColor = '#2d3436';
-        card.style.color = '#e0e0e0';
-        card.style.border = '1px solid #4a5568';
+        card.style.backgroundColor = '#e8f5f0';
+        card.style.color = '#1a3a3a';
+        card.style.border = '1px solid #a8d5d0';
         card.style.borderRadius = '8px';
-        card.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+        card.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.05)';
         card.style.transition = 'all 0.3s ease';
 
         // Update card content text styling
@@ -16,64 +16,65 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardContent = card.querySelector('.card-content');
 
         if (cardTitle) {
-            cardTitle.style.color = '#e0e0e0';
+            cardTitle.style.color = '#1a3a3a';
             cardTitle.style.fontWeight = 'bold';
-            cardTitle.style.textShadow = '0 1px 1px rgba(0, 0, 0, 0.3)';
+            cardTitle.style.textShadow = 'none';
         }
 
         if (cardContent) {
-            cardContent.style.color = '#b2bec3';
+            cardContent.style.color = '#4a7a7a';
             cardContent.style.lineHeight = '1.5';
         }
     });
 
-    // Update horizontal and vertical name display styles with subtle glow effect
+    // Update horizontal and vertical name display styles with subtle turquoise glow
     const nameDisplay = document.querySelectorAll('.name-display');
 
     nameDisplay.forEach(display => {
-        display.style.backgroundColor = '#353b42';
-        display.style.color = '#e0e0e0';
+        display.style.backgroundColor = '#e8f5f0';
+        display.style.color = '#1a3a3a';
         display.style.padding = '8px 12px';
         display.style.borderRadius = '4px';
         display.style.fontSize = '14px';
         display.style.fontWeight = '500';
-        display.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.1)';
+        display.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.05)';
         display.style.transition = 'all 0.2s ease';
+        display.style.border = '1px solid #a8d5d0';
     });
 
-    // Update number indicators with subtle glow
+    // Update number indicators with turquoise tint
     const numberIndicators = document.querySelectorAll('.number-indicator');
 
     numberIndicators.forEach(indicator => {
-        indicator.style.color = '#b2bec3';
+        indicator.style.color = '#4a7a7a';
         indicator.style.fontSize = '12px';
         indicator.style.marginLeft = '4px';
-        indicator.style.textShadow = '0 1px 1px rgba(0, 0, 0, 0.2)';
+        indicator.style.textShadow = 'none';
     });
 
-    // Update horizontal/vertical labels with subtle glow
+    // Update horizontal/vertical labels with turquoise styling
     const labels = document.querySelectorAll('.horizontal-label, .vertical-label');
 
     labels.forEach(label => {
-        label.style.color = '#b2bec3';
+        label.style.color = '#4a7a7a';
         label.style.fontSize = '12px';
         label.style.textTransform = 'uppercase';
         label.style.fontWeight = '500';
-        label.style.textShadow = '0 1px 1px rgba(0, 0, 0, 0.2)';
+        label.style.textShadow = 'none';
     });
 
-    // Update grid layout styling with subtle glow
+    // Update grid layout styling with turquoise theme
     const gridContainer = document.querySelector('.grid-container');
     if (gridContainer) {
-        gridContainer.style.backgroundColor = '#2d3436';
+        gridContainer.style.backgroundColor = '#e8f5f0';
         gridContainer.style.borderRadius = '8px';
         gridContainer.style.padding = '16px';
-        gridContainer.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
-        gridContainer.style.border = '1px solid #4a5568';
+        gridContainer.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.05)';
+        gridContainer.style.border = '1px solid #a8d5d0';
     }
 });
 
-// Main functionality with improved dark theme consistency
+// Main functionality with turquoise theme consistency
 function convertNames() {
     const horizontalNames = document.querySelectorAll('.horizontal-name');
     const verticalNames = document.querySelectorAll('.vertical-name');
